@@ -2,30 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/img_passport"
+    android:id="@+id/layoutlinea"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="16dp"
-    android:background="#FFFCFB"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/background"
+    android:hapticFeedbackEnabled="false"
     android:orientation="horizontal"
     android:weightSum="1">
 
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_pass"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.4"
-        android:scaleType="fitCenter"
-        tools:srcCompat="@drawable/img" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_weight="0.3"
+        android:scaleType="fitStart"
+        tools:srcCompat="@drawable/avatar" />
 
     <RelativeLayout
         android:id="@+id/relative_infos"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_marginTop="14dp"
-        android:layout_weight="0.6"
-        android:background="#FFFCFB"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.7"
+        android:background="#76000105"
         android:padding="16dp">
 
         <TextView
@@ -34,11 +35,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
             android:gravity="center"
             android:text="PASSPORT TEMPOREL"
-            android:textColor="#5D1717"
+            android:textColor="#FFFFFF"
             android:textSize="22sp"
             android:textStyle="bold"
             android:visibility="visible"
@@ -51,6 +52,7 @@
             android:layout_below="@id/titre_pass"
             android:layout_marginTop="20dp"
             android:text="Nom: "
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -61,6 +63,7 @@
             android:layout_below="@id/nom_voy"
             android:layout_marginTop="14dp"
             android:text="Annee de naissance: "
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -71,6 +74,7 @@
             android:layout_below="@id/annee_naiss"
             android:layout_marginTop="14dp"
             android:text="Destination"
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -81,7 +85,7 @@
             android:layout_below="@id/destination"
             android:layout_marginTop="14dp"
             android:text="Age Temporel: "
-            android:textColor="#0F0DED"
+            android:textColor="#FF96B7"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -92,6 +96,7 @@
             android:layout_below="@id/age_temp"
             android:layout_marginTop="14dp"
             android:text="Motif: "
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
