@@ -1,3 +1,5 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
 pluginManagement {
     repositories {
         google {
@@ -22,11 +24,5 @@ dependencyResolutionManagement {
     }
 }
 
-<<<<<<< HEAD
 rootProject.name = "Douane Temporelle"
 include(":app")
-=======
-rootProject.name = "DouaneTemporel"
-include(":app")
- 
->>>>>>> Activites_3

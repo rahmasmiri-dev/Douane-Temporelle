@@ -10,11 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
         android:theme="@style/Theme.DouaneTemporelle">
-=======
-        android:theme="@style/Theme.DouaneTemporel">
->>>>>>> Activites_3
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -25,13 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-=======
+        <activity
+            android:name=".VerificationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".activite3"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
->>>>>>> Activites_3
     </application>
 
 </manifest>

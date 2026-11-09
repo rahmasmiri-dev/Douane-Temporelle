@@ -11,10 +11,14 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
+        android:background="@drawable/img_2"
+
         android:gravity="center_horizontal"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="63dp">
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -33,6 +37,7 @@
                 android:gravity="center"
                 android:text="Douane Temporelle"
                 android:textAlignment="center"
+                android:textColor="#2940BA"
                 android:textSize="34sp"
                 android:textStyle="bold|italic" />
 
@@ -41,69 +46,91 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/R.Snom"
+                android:id="@+id/RS_nom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nom et Prenom" />
+                android:text="Nom et Prenom"
+                android:textColor="#F0EDED"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/RS_edit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="EX: SAMI BEN AHMED"
-                android:inputType="text" />
+                android:inputType="text"
+                android:shadowColor="#DBCBCB"
+                android:textColor="#F2E6E6"
+                android:textColorHighlight="#EBDEDE"
+                android:textColorHint="#8DFFFFFF"
+                android:textColorLink="#F4ECEC" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/RS_nais"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Date de naissance" />
+                android:text="Date de naissance"
+                android:textColor="#FBF7F7"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/RS_edit2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="ex: 1990"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColorHint="#69FAF5F5" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/RS_des"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="l'année de destination" />
+                android:text="l'année de destination"
+                android:textColor="#FDF7F7"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/RS_edit3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="ex: 2050"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColorHint="#A0F2F0F0" />
 
         </LinearLayout>
 
@@ -111,50 +138,64 @@
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:gravity="center"
             android:text="un motif de voyage:"
+            android:textColor="#F6ECEC"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/RS_Motif">
+
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/RS_Tourisme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="Tourisme" />
+                android:text="Tourisme"
+                android:textColor="#FDFAFA"
+                android:textStyle="bold" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/RS_Modi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="Modification du passé" />
+                android:text="Modification du passé"
+                android:textColor="#F8F4F4"
+                android:textStyle="bold" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/RS_Fuite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:text="Fuite" />
+                android:text="Fuite"
+                android:textColor="#F4EEEE"
+                android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="90dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/img" />
         </RadioGroup>
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="inspecter le profil" />
+            android:id="@+id/RS_button"
+            android:layout_width="263dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="inspecter le profil"
+            android:textColor="#000000"
+            android:textSize="24sp" />
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

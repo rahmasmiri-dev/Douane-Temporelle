@@ -3,23 +3,13 @@ plugins {
 }
 
 android {
-<<<<<<< HEAD
     namespace = "com.example.douanetemporelle"
-=======
-    namespace = "com.example.douanetemporel"
->>>>>>> Activites_3
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 36
 
     defaultConfig {
-<<<<<<< HEAD
         applicationId = "com.example.douanetemporelle"
-=======
-        applicationId = "com.example.douanetemporel"
->>>>>>> Activites_3
         minSdk = 26
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
@@ -28,10 +18,11 @@ android {
 
     buildTypes {
         release {
-            optimization {
-                enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
-            }
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {

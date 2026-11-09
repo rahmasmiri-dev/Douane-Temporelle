@@ -5,7 +5,6 @@
     <string name="app_name">Douane Temporelle</string>
     <style name="Base.Theme.DouaneTemporelle" parent="Theme.Material3.DayNight.NoActionBar">
         
-        
     </style>
     <style name="Theme.DouaneTemporelle" parent="Base.Theme.DouaneTemporelle"/>
 </resources>

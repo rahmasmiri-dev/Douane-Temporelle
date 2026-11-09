@@ -1,6 +1,5 @@
 package com.example.douanetemporelle;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etNom, etNaissance, etDestination;
     private RadioGroup rgMotif;
     private Button btnInspecter;
-
+    // bch ne5o les donne mt3i
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         rgMotif = findViewById(R.id.RS_Motif);
         btnInspecter = findViewById(R.id.RS_button);
 
-        // 3 - عند الضغط على زر "Inspecter le profil"
         btnInspecter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,16 +34,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
+    //bch na3ml verification 3la les donne ili 3andi
     private void inspecterProfil() {
-
-        // bch na7i les espaces
         String nom = etNom.getText().toString().trim();
         String strNaissance = etNaissance.getText().toString().trim();
         String strDestination = etDestination.getText().toString().trim();
 
-        // bch na3ml verfication 3ali les champs
         if (nom.isEmpty()) {
             etNom.setError("Nom obligatoire");
             etNom.requestFocus();
@@ -62,11 +56,16 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // bch nrod les anne des entier
-        int anneeNaissance = Integer.parseInt(strNaissance);
-        int anneeDestination = Integer.parseInt(strDestination);
-
-        // les anne entre 1000 et 9999
+        int anneeNaissance;
+        int anneeDestination;
+        try {
+            anneeNaissance = Integer.parseInt(strNaissance);
+            anneeDestination = Integer.parseInt(strDestination);
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Années invalides", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        // lezem les anne entre 1000 et 9999
         if (anneeNaissance < 1000 || anneeNaissance > 9999) {
             etNaissance.setError("Année invalide (ex: 1990)");
             etNaissance.requestFocus();
@@ -79,27 +78,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        // raison mt3 voyage
+        //recuperation motif
         String motif = recupererMotif();
         if (motif == null) {
             Toast.makeText(this, "Choisissez un motif de voyage", Toast.LENGTH_SHORT).show();
             return;
         }
-
-        // bch na3ml creation mt3 intent
+        //creation mt3 intent
         Intent intent = new Intent(MainActivity.this, VerificationActivity.class);
-
-        // bch nzid 4 chiffre mil carte etudiant donc bch n3ayet l cle
+        // les donne bch nb3athhom
         intent.putExtra(cles.nomVoyageur(), nom);
         intent.putExtra(cles.anneeNaissance(), anneeNaissance);
         intent.putExtra(cles.anneeDestination(), anneeDestination);
         intent.putExtra(cles.motif(), motif);
 
-        // 12 - فتح النشاط الثاني
         startActivity(intent);
     }
-
-    // recuperation mt3 motif
+    // 9a3da ndevelopper fil fct ili sta3maltha llrecuperation mt3 motif
     private String recupererMotif() {
         int idChoisi = rgMotif.getCheckedRadioButtonId();
 
