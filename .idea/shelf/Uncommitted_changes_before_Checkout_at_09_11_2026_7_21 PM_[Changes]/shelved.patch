@@ -1,0 +1,294 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/main\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <LinearLayout\r\n        android:id=\"@+id/background\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n\r\n        android:background=\"@drawable/img_2\"\r\n\r\n        android:gravity=\"center_horizontal\"\r\n        android:orientation=\"vertical\"\r\n        tools:layout_editor_absoluteX=\"0dp\"\r\n        tools:layout_editor_absoluteY=\"63dp\">\r\n\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/textView9\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"20dp\"\r\n                android:layout_marginLeft=\"20dp\"\r\n                android:layout_marginTop=\"30dp\"\r\n                android:layout_marginEnd=\"30dp\"\r\n                android:fontFamily=\"sans-serif-black\"\r\n                android:gravity=\"center\"\r\n                android:text=\"Douane Temporelle\"\r\n                android:textAlignment=\"center\"\r\n                android:textColor=\"#2940BA\"\r\n                android:textSize=\"34sp\"\r\n                android:textStyle=\"bold|italic\" />\r\n\r\n        </LinearLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"50dp\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/R.Snom\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"Nom et Prenom\"\r\n                android:textColor=\"#F0EDED\"\r\n                android:textSize=\"20sp\"\r\n                android:textStyle=\"bold\" />\r\n\r\n            <EditText\r\n                android:id=\"@+id/editTextText\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"10dp\"\r\n                android:layout_weight=\"1\"\r\n                android:ems=\"10\"\r\n                android:hint=\"EX: SAMI BEN AHMED\"\r\n                android:inputType=\"text\"\r\n                android:shadowColor=\"#DBCBCB\"\r\n                android:textColor=\"#F2E6E6\"\r\n                android:textColorHighlight=\"#EBDEDE\"\r\n                android:textColorHint=\"#8DFFFFFF\"\r\n                android:textColorLink=\"#F4ECEC\" />\r\n\r\n        </LinearLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/textView2\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"Date de naissance\"\r\n                android:textColor=\"#FBF7F7\"\r\n                android:textSize=\"20sp\"\r\n                android:textStyle=\"bold\" />\r\n\r\n            <EditText\r\n                android:id=\"@+id/editTextText\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"10dp\"\r\n                android:layout_weight=\"1\"\r\n                android:ems=\"10\"\r\n                android:hint=\"ex: 1990\"\r\n                android:inputType=\"text\"\r\n                android:textColorHint=\"#69FAF5F5\" />\r\n\r\n        </LinearLayout>\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:orientation=\"horizontal\">\r\n\r\n            <TextView\r\n                android:id=\"@+id/textView2\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_weight=\"1\"\r\n                android:text=\"l'année de destination\"\r\n                android:textColor=\"#FDF7F7\"\r\n                android:textSize=\"18sp\"\r\n                android:textStyle=\"bold\" />\r\n\r\n            <EditText\r\n                android:id=\"@+id/editTextText\"\r\n                android:layout_width=\"wrap_content\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"10dp\"\r\n                android:layout_weight=\"1\"\r\n                android:ems=\"10\"\r\n                android:hint=\"ex: 2050\"\r\n                android:inputType=\"text\"\r\n                android:textColorHint=\"#A0F2F0F0\" />\r\n\r\n        </LinearLayout>\r\n\r\n        <TextView\r\n            android:id=\"@+id/textView10\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"30dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"un motif de voyage:\"\r\n            android:textColor=\"#F6ECEC\"\r\n            android:textSize=\"20sp\"\r\n            android:textStyle=\"bold\" />\r\n\r\n        <RadioGroup\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"20dp\">\r\n\r\n            <RadioButton\r\n                android:id=\"@+id/radioButton\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"30dp\"\r\n                android:text=\"Tourisme\"\r\n                android:textColor=\"#FDFAFA\"\r\n                android:textStyle=\"bold\" />\r\n\r\n            <RadioButton\r\n                android:id=\"@+id/radioButton2\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"30dp\"\r\n                android:text=\"Modification du passé\"\r\n                android:textColor=\"#F8F4F4\"\r\n                android:textStyle=\"bold\" />\r\n\r\n            <RadioButton\r\n                android:id=\"@+id/radioButton3\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\"\r\n                android:layout_marginStart=\"30dp\"\r\n                android:text=\"Fuite\"\r\n                android:textColor=\"#F4EEEE\"\r\n                android:textStyle=\"bold\" />\r\n\r\n        </RadioGroup>\r\n\r\n        <Button\r\n            android:id=\"@+id/button\"\r\n            android:layout_width=\"263dp\"\r\n            android:layout_height=\"68dp\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:layout_marginLeft=\"50dp\"\r\n            android:layout_marginTop=\"20dp\"\r\n            android:layout_marginEnd=\"20dp\"\r\n            android:layout_marginRight=\"20dp\"\r\n            android:layout_marginBottom=\"20dp\"\r\n            android:text=\"inspecter le profil\"\r\n            android:textColor=\"#000000\"\r\n            android:textSize=\"24sp\" />\r\n\r\n    </LinearLayout>\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision 6b1f63fc5f06d75e588102f18087c3794bbbb050)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1794246429367)
+@@ -33,11 +33,11 @@
+                 android:layout_marginLeft="20dp"
+                 android:layout_marginTop="30dp"
+                 android:layout_marginEnd="30dp"
+-                android:fontFamily="sans-serif-black"
++                android:fontFamily="serif"
+                 android:gravity="center"
+                 android:text="Douane Temporelle"
+                 android:textAlignment="center"
+-                android:textColor="#2940BA"
++                android:textColor="#08AEFB"
+                 android:textSize="34sp"
+                 android:textStyle="bold|italic" />
+ 
+@@ -60,7 +60,7 @@
+                 android:textStyle="bold" />
+ 
+             <EditText
+-                android:id="@+id/editTextText"
++                android:id="@+id/RS_edit1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="10dp"
+@@ -72,7 +72,8 @@
+                 android:textColor="#F2E6E6"
+                 android:textColorHighlight="#EBDEDE"
+                 android:textColorHint="#8DFFFFFF"
+-                android:textColorLink="#F4ECEC" />
++                android:textColorLink="#F4ECEC"
++                tools:ignore="DuplicateIds,TouchTargetSizeCheck" />
+ 
+         </LinearLayout>
+ 
+@@ -83,7 +84,7 @@
+             android:orientation="horizontal">
+ 
+             <TextView
+-                android:id="@+id/textView2"
++                android:id="@+id/RS_NAIS"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+@@ -93,7 +94,7 @@
+                 android:textStyle="bold" />
+ 
+             <EditText
+-                android:id="@+id/editTextText"
++                android:id="@+id/RS_EDIT2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="10dp"
+@@ -101,7 +102,8 @@
+                 android:ems="10"
+                 android:hint="ex: 1990"
+                 android:inputType="text"
+-                android:textColorHint="#69FAF5F5" />
++                android:textColorHint="#69FAF5F5"
++                tools:ignore="TouchTargetSizeCheck" />
+ 
+         </LinearLayout>
+ 
+@@ -112,7 +114,7 @@
+             android:orientation="horizontal">
+ 
+             <TextView
+-                android:id="@+id/textView2"
++                android:id="@+id/RS_DES"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+@@ -122,7 +124,7 @@
+                 android:textStyle="bold" />
+ 
+             <EditText
+-                android:id="@+id/editTextText"
++                android:id="@+id/RS_EDIT3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="10dp"
+@@ -130,57 +132,64 @@
+                 android:ems="10"
+                 android:hint="ex: 2050"
+                 android:inputType="text"
+-                android:textColorHint="#A0F2F0F0" />
++                android:textColorHint="#A0F2F0F0"
++                tools:ignore="TouchTargetSizeCheck" />
+ 
+         </LinearLayout>
+ 
+         <TextView
+-            android:id="@+id/textView10"
++            android:id="@+id/RS_motif"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_marginTop="30dp"
++            android:layout_marginTop="70dp"
+             android:gravity="center"
+             android:text="un motif de voyage:"
+             android:textColor="#F6ECEC"
+-            android:textSize="20sp"
++            android:textSize="34sp"
+             android:textStyle="bold" />
+ 
+         <RadioGroup
++            android:id="@+id/RS_Radio"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:layout_marginTop="20dp">
++            android:layout_marginTop="40dp">
+ 
+             <RadioButton
+-                android:id="@+id/radioButton"
++                android:id="@+id/RS_Tourisime"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="30dp"
++                android:fontFamily="sans-serif"
+                 android:text="Tourisme"
+                 android:textColor="#FDFAFA"
++                android:textSize="24sp"
+                 android:textStyle="bold" />
+ 
+             <RadioButton
+-                android:id="@+id/radioButton2"
++                android:id="@+id/RS_Modificatio"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="30dp"
++                android:fontFamily="sans-serif"
+                 android:text="Modification du passé"
+                 android:textColor="#F8F4F4"
++                android:textSize="24sp"
+                 android:textStyle="bold" />
+ 
+             <RadioButton
+-                android:id="@+id/radioButton3"
++                android:id="@+id/RS_Fuite"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="30dp"
+                 android:text="Fuite"
+                 android:textColor="#F4EEEE"
++                android:textSize="24sp"
+                 android:textStyle="bold" />
+ 
+         </RadioGroup>
+ 
+         <Button
+-            android:id="@+id/button"
++            android:id="@+id/RS_button"
+             android:layout_width="263dp"
+             android:layout_height="68dp"
+             android:layout_marginStart="20dp"
+Index: app/src/main/java/com/example/douanetemporelle/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.douanetemporelle;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.core.graphics.Insets;\r\nimport androidx.core.view.ViewCompat;\r\nimport androidx.core.view.WindowCompat;\r\nimport androidx.core.view.WindowInsetsCompat;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        WindowCompat.enableEdgeToEdge(getWindow());\r\n        setContentView(R.layout.activity_main);\r\n        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {\r\n            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());\r\n            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);\r\n            return insets;\r\n        });\r\n    }\r\n}
+===================================================================
+diff --git a/app/src/main/java/com/example/douanetemporelle/MainActivity.java b/app/src/main/java/com/example/douanetemporelle/MainActivity.java
+--- a/app/src/main/java/com/example/douanetemporelle/MainActivity.java	(revision 6b1f63fc5f06d75e588102f18087c3794bbbb050)
++++ b/app/src/main/java/com/example/douanetemporelle/MainActivity.java	(date 1794248341047)
+@@ -1,24 +1,113 @@
+ package com.example.douanetemporelle;
+-
++import android.content.Intent;
+ import android.os.Bundle;
++import android.view.View;
++import android.widget.Button;
++import android.widget.EditText;
++import android.widget.RadioGroup;
++import android.widget.Toast;
+ 
+ import androidx.appcompat.app.AppCompatActivity;
+-import androidx.core.graphics.Insets;
+-import androidx.core.view.ViewCompat;
+-import androidx.core.view.WindowCompat;
+-import androidx.core.view.WindowInsetsCompat;
+ 
+ public class MainActivity extends AppCompatActivity {
+ 
++
++    private EditText etNom, etNaissance, etDestination;
++    private RadioGroup rgMotif;
++    private Button btnInspecter;
++
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+-        WindowCompat.enableEdgeToEdge(getWindow());
+         setContentView(R.layout.activity_main);
+-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+-            return insets;
++
++
++        etNom = findViewById(R.id.RS_edit1);
++        etNaissance = findViewById(R.id.RS_EDIT2);
++        etDestination = findViewById(R.id.RS_EDIT3);
++        rgMotif = findViewById(R.id.RS_Radio);
++        btnInspecter = findViewById(R.id.RS_button);
++
++        //  ki nenzel 3la bouton
++        btnInspecter.setOnClickListener(new View.OnClickListener() {
++            @Override
++            public void onClick(View v) {
++                inspecterProfil();
++            }
+         });
+     }
++
++    // fonction bch na3ml verification 3la les champs
++    private void inspecterProfil() {
++
++        // bch na5o nom w nafas5 espace
++        String nom = etNom.getText().toString().trim();
++        String strNaissance = etNaissance.getText().toString().trim();
++        String strDestination = etDestination.getText().toString().trim();
++
++        // bch na3ml check ili homa mahomch vide
++        if (nom.isEmpty()) {
++            etNom.setError("Nom obligatoire");
++            etNom.requestFocus();
++            return;
++        }
++        if (strNaissance.isEmpty()) {
++            etNaissance.setError("Année obligatoire");
++            etNaissance.requestFocus();
++            return;
++        }
++        if (strDestination.isEmpty()) {
++            etDestination.setError("Année obligatoire");
++            etDestination.requestFocus();
++            return;
++        }
++
++        // bch nrod les date des entier
++        int anneeNaissance = Integer.parseInt(strNaissance);
++        int anneeDestination = Integer.parseInt(strDestination);
++
++        // bch nchouf les date metkawnin min 4 chiffre
++        if (anneeNaissance < 1000 || anneeNaissance > 9999) {
++            etNaissance.setError("Année invalide (ex: 1990)");
++            etNaissance.requestFocus();
++            return;
++        }
++        if (anneeDestination < 1000 || anneeDestination > 9999) {
++            etDestination.setError("Année invalide (ex: 2050)");
++            etDestination.requestFocus();
++            return;
++        }
++
++        // bch na3fo raison de voyage
++        String motif = recupererMotif();
++        if (motif == null) {
++            Toast.makeText(this, "Choisissez un motif de voyage", Toast.LENGTH_SHORT).show();
++            return;
++        }
++
++        //bch na3mlo intent
++        Intent intent = new Intent(MainActivity.this, VerificationActivity.class);
++
++        //bch nzido numero mt3 carte etudiant 3yatna lcles
++        intent.putExtra(cles.nomVoyageur(), nom);
++        intent.putExtra(cles.anneeNaissance(), anneeNaissance);
++        intent.putExtra(cles.anneeDestination(), anneeDestination);
++        intent.putExtra(cles.motif(), motif);
++
++        startActivity(intent);
++    }
++
++    //bch neb3tho Motif
++    private String recupererMotif() {
++        int idChoisi = rgMotif.getCheckedRadioButtonId();
++
++        if (idChoisi == R.id.RS_Tourisime) {
++            return "Tourisme";
++        } else if (idChoisi == R.id.RS_Modificatio) {
++            return "Modification du passé";
++        } else if (idChoisi == R.id.RS_Fuite) {
++            return "Fuite";
++        }
++        return null;
++    }
+ }
+\ No newline at end of file
