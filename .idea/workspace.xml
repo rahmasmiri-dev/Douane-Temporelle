@@ -5,19 +5,9 @@
       <config />
     </shared>
     <layouts>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_activite3.xml">
-        <config>
-          <theme>@style/Theme.DouaneTemporel</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
-          <theme>@style/Theme.DouaneTemporel</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/xml/activite3.xml">
-        <config>
-          <theme>@style/Theme.DouaneTemporel</theme>
+          <theme>@style/Theme.DouaneTemporelle</theme>
         </config>
       </layout>
     </layouts>
@@ -26,7 +16,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d4dbe9b-dae3-452a-80d7-732194a5b649" name="Changes" comment="" />
+    <list default="true" id="189b2316-09d6-452d-850f-dbfa96c84b7b" name="Changes" comment="class cle">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,18 +27,18 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\Dell\.android\avd\Medium_Phone.avd]" />
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\pc-Rahma\.android\avd\Medium_Phone.avd]" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Douane Temporelle" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -56,24 +48,45 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rahmasmiri-dev&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rahmasmiri-dev/Douane-Temporelle.git&quot;,
+    &quot;accountId&quot;: &quot;5f9095ef-d8d2-4295-9916-6700611f4576&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7,
+  &quot;associatedIndex&quot;: 1,
   &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3LhhL6mSeJMiFXdoXeR8rY815dM" />
+  <component name="ProjectId" id="3LkGO3WA8uL0iTKUvG4GOFOEwh4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
     &quot;CidrDebugProfileConversion&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -82,23 +95,14 @@
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Activites__3&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ACTIVITE-1&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dell/Desktop/Douane temporelle/app/src/main/res/drawable&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc-Rahma/Desktop/Douane Temporelle&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dell\Desktop\Douane temporelle\app\src\main\res\drawable" />
-    </key>
-    <key name="android.template.1301138363">
-      <recent name="com.example.douanetemporel" />
-    </key>
-  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="DouaneTemporel.app.unitTest" />
+      <module name="Douane_Temporelle.app" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -166,25 +170,30 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d4dbe9b-dae3-452a-80d7-732194a5b649" name="Changes" comment="" />
-      <created>1793912150660</created>
+      <changelist id="189b2316-09d6-452d-850f-dbfa96c84b7b" name="Changes" comment="" />
+      <created>1793990616496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1793912150660</updated>
+      <updated>1793990616496</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="badelt interface" />
+    <MESSAGE value="kmalt java" />
+    <option name="LAST_COMMIT_MESSAGE" value="kmalt java" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
       <map>
-        <entry key="com.example.douanetemporel">
+        <entry key="com.example.douanetemporelle">
           <value>
-            <CheckInfo lastCheckTimestamp="1794150189475" />
+            <CheckInfo lastCheckTimestamp="1794237539054" />
           </value>
         </entry>
-        <entry key="com.example.douanetemporel.test">
+        <entry key="com.example.douanetemporelle.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1794150189559" />
+            <CheckInfo lastCheckTimestamp="1794237539057" />
           </value>
         </entry>
       </map>
