@@ -1,0 +1,27 @@
+com.example.douanetemporelle
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable img
+drawable img_1
+id R_Snom
+id background
+id button
+id editTextText
+id imageView2
+id main
+id radioButton
+id radioButton2
+id radioButton3
+id textView10
+id textView2
+id textView9
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base_Theme_DouaneTemporelle
+style Theme_DouaneTemporelle
+xml backup_rules
+xml data_extraction_rules
