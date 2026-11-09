@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.DouaneTemporelle" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.DouaneTemporel" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> Activites_3
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
     <style name="Theme.DouaneTemporelle" parent="Base.Theme.DouaneTemporelle" />
+=======
+    <style name="Theme.DouaneTemporel" parent="Base.Theme.DouaneTemporel" />
+>>>>>>> Activites_3
 </resources>

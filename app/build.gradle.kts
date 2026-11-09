@@ -3,13 +3,21 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.douanetemporelle"
+=======
+    namespace = "com.example.douanetemporel"
+>>>>>>> Activites_3
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
+<<<<<<< HEAD
         applicationId = "com.example.douanetemporelle"
+=======
+        applicationId = "com.example.douanetemporel"
+>>>>>>> Activites_3
         minSdk = 26
         targetSdk = 37
         versionCode = 1

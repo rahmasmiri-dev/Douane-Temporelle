@@ -22,5 +22,11 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "Douane Temporelle"
 include(":app")
+=======
+rootProject.name = "DouaneTemporel"
+include(":app")
+ 
+>>>>>>> Activites_3
