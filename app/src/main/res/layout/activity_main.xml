@@ -33,11 +33,11 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="Douane Temporelle"
                 android:textAlignment="center"
-                android:textColor="#2940BA"
+                android:textColor="#2196F3"
                 android:textSize="34sp"
                 android:textStyle="bold|italic" />
 
@@ -138,18 +138,18 @@
             android:id="@+id/textView10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:text="un motif de voyage:"
-            android:textColor="#F6ECEC"
-            android:textSize="20sp"
+            android:textColor="#EDE8E8"
+            android:textSize="40sp"
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/RS_Motif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:id="@+id/RS_Motif">
+            android:layout_marginTop="50dp">
 
 
             <RadioButton
@@ -159,6 +159,7 @@
                 android:layout_marginStart="30dp"
                 android:text="Tourisme"
                 android:textColor="#FDFAFA"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -168,6 +169,7 @@
                 android:layout_marginStart="30dp"
                 android:text="Modification du passé"
                 android:textColor="#F8F4F4"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <RadioButton
@@ -177,6 +179,7 @@
                 android:layout_marginStart="30dp"
                 android:text="Fuite"
                 android:textColor="#F4EEEE"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
         </RadioGroup>
