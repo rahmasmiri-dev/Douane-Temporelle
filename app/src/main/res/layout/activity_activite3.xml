@@ -18,6 +18,8 @@
         android:layout_marginTop="90dp"
         android:layout_marginBottom="50dp"
         android:textColor="#FFFEFE"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/AH_nvvoyageur"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
