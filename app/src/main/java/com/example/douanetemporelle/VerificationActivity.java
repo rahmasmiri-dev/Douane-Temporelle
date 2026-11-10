@@ -12,8 +12,10 @@ public class VerificationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // layout xml eli bech nesta3malha eli heya (activity_verification.xml)
         setContentView(R.layout.activity_verification);
 
+        //rbatet kol objet fel code bel id mte3ou fel xml
         TextView txtNom = findViewById(R.id.nom_voy_ot);
         TextView txtAnneeNaiss = findViewById(R.id.annee_naiss_ot);
         TextView txtDestination = findViewById(R.id.destination_ot);
@@ -23,10 +25,13 @@ public class VerificationActivity extends AppCompatActivity {
         Button btnRefuser = findViewById(R.id.btn_refu_ot);
 
         // Récupération mte3 des données eli jeyin mel Activité 1 bel Intent
-        Intent intent = getIntent();
+        Intent intent = getIntent(); //njib el Intent elli b3athetha el activité 1
         String nom = intent.getStringExtra(cles.nomVoyageur());
+        //njib date naiss, w ken champs feragh yekhou 2000
         int anneeNaiss = intent.getIntExtra(cles.anneeNaissance(), 2000);
+        //njib annee distination, w ken champs feragh yekhou 2050
         int anneeDest = intent.getIntExtra(cles.anneeDestination(), 2050);
+
         String motif = intent.getStringExtra(cles.motif());
 
         // Calcul mte3 l'age temporel
@@ -47,17 +52,20 @@ public class VerificationActivity extends AppCompatActivity {
         // l action mte3 el bouton approuver le saut temporel
         btnApprouver.setOnClickListener(new View.OnClickListener() {
             @Override
+            // kif nekliki 3la "approuver"
             public void onClick(View v) {
+                //sna3t el intent explicite
                 Intent resultIntent = new Intent(VerificationActivity.this, activite3.class);
                 resultIntent.putExtra(cles.verdict(), true);
                 resultIntent.putExtra(cles.nomVoyageur(), nom);
-                startActivity(resultIntent);
+                startActivity(resultIntent); //lancit l activite-3
             }
         });
 
         // Action mte3 el bouton refu du saut
         btnRefuser.setOnClickListener(new View.OnClickListener() {
             @Override
+            // kif nekliki 3la "Refuser"
             public void onClick(View v) {
                 Intent resultIntent = new Intent(VerificationActivity.this, activite3.class);
                 resultIntent.putExtra(cles.verdict(), false);
