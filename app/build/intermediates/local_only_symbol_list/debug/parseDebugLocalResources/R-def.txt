@@ -43,6 +43,7 @@ layout activity_activite3
 layout activity_main
 layout activity_verification
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string app_name
 style Base.Theme.DouaneTemporelle

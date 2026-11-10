@@ -56,7 +56,7 @@
                 android:layout_weight="1"
                 android:text="Nom et Prenom"
                 android:textColor="#F0EDED"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -72,7 +72,8 @@
                 android:textColor="#F2E6E6"
                 android:textColorHighlight="#EBDEDE"
                 android:textColorHint="#8DFFFFFF"
-                android:textColorLink="#F4ECEC" />
+                android:textColorLink="#F4ECEC"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -89,7 +90,7 @@
                 android:layout_weight="1"
                 android:text="Date de naissance"
                 android:textColor="#FBF7F7"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -102,7 +103,8 @@
                 android:hint="ex: 1990"
                 android:inputType="text"
                 android:textColor="#F6F1F1"
-                android:textColorHint="#69FAF5F5" />
+                android:textColorHint="#69FAF5F5"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -119,7 +121,7 @@
                 android:layout_weight="1"
                 android:text="l'année de destination"
                 android:textColor="#FDF7F7"
-                android:textSize="18sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <EditText
@@ -132,7 +134,8 @@
                 android:hint="ex: 2050"
                 android:inputType="text"
                 android:textColor="#F6F0F0"
-                android:textColorHint="#A0F2F0F0" />
+                android:textColorHint="#A0F2F0F0"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -144,7 +147,7 @@
             android:gravity="center"
             android:text="un motif de voyage:"
             android:textColor="#EDE8E8"
-            android:textSize="40sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <RadioGroup
