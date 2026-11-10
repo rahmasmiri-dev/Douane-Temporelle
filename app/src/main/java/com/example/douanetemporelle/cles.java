@@ -12,7 +12,6 @@ public class cles {
     }
 
 
-
     public static String nomVoyageur() {
         return cle(MATRICULE, "NOM_VOYAGEUR");
     }

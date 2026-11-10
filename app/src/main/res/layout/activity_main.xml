@@ -101,6 +101,7 @@
                 android:ems="10"
                 android:hint="ex: 1990"
                 android:inputType="text"
+                android:textColor="#F6F1F1"
                 android:textColorHint="#69FAF5F5" />
 
         </LinearLayout>
@@ -130,6 +131,7 @@
                 android:ems="10"
                 android:hint="ex: 2050"
                 android:inputType="text"
+                android:textColor="#F6F0F0"
                 android:textColorHint="#A0F2F0F0" />
 
         </LinearLayout>
